@@ -1,9 +1,24 @@
 # ColorCircleProgress
 一个简单的多彩圆圈进度条。主要源码来自support v4
-![Screenshot1]()![Screenshot2]()
+
+![Screenshot1](https://raw.githubusercontent.com/TaRGroup/ColorCircleProgress/master/image/device-2017-01-20-142224.png)
+![Screenshot2](https://raw.githubusercontent.com/TaRGroup/ColorCircleProgress/master/image/device-2017-01-20-142241.png)
 ## 怎么用
 ### 添加依赖
-（正在上传请稍等）
+## 添加依赖
+1. 在项目级build.gradle找到相应位置添加（若已有就跳过）：
+```grooxy
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+2. 应用级添加依赖：
+```grooxy
+compile 'com.github.TaRGroup:ColorCircleProgress:-SNAPSHOT'
+```
 ### 添加View
 向你的布局添加`ColorCircleProgress`，
 随后进度条就显示了。更多功能（其实也没多少）请看Demo。
